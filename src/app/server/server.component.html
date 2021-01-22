@@ -1,0 +1,7 @@
+<p>server works!</p>
+<input type="text" class="form-control"
+[(ngModel)] = "username">
+
+<p>{{username}}</p>
+<button type="btn btn-primary" name="button" [disabled] = "username === ''"
+(click) = "onReset()">Reset</button>
